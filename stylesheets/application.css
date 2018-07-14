@@ -214,6 +214,150 @@ article {
   padding: 16px;
 }
 
+/* article title */
+.article__title {
+  padding-top: 3px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.article__title::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 15px;
+  background-color: #444;
+  border-top: solid 15px #999;
+}
+
+/* article sub title */
+.article__sub-title {
+  padding-left: 20px;
+  position: relative;
+}
+
+.article__sub-title::before {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 0;
+  content: "";
+  width: 4px;
+  height: 16px;
+  background-color: #444;
+}
+
+.article__sub-title::after {
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid rgb(68, 68, 68);
+}
+
+/* article unorder list */
+.article__unorder-list {
+  list-style-type: disc;
+  line-height: 150%;
+}
+
+.article__unorder-list-item {
+  margin: 0.5em 1em 0.5em 1.5em;
+}
+
+/* 引用部分 */
+.article__blockquote-paragraph:first-child {
+  display: none;
+}
+
+.article__blockquote {
+  padding-left: 36px;
+  padding-top: 36px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.article__blockquote::before {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: -12px;
+  content: '"';
+  color: white;
+  font-size: 48px;
+  text-align: center;
+  line-height: 66px;
+  width: 42px;
+  height: 42px;
+  background-color: #999;
+  border-radius: 50%;
+}
+
+.article__blockquote::after {
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 6px;
+  content: "";
+  width: 6px;
+  height: 200px;
+  background-color: #999;
+}
+
+/* .article sub sub title */
+.article__sub-sub-title {
+  margin: 24px auto;
+  padding-left: 32px;
+  position: relative;
+}
+
+.article__sub-sub-title::before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #444;
+}
+
+.article__sub-sub-title::after {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #999;
+  z-index: 1;
+}
+
+.form-item__actions-items {
+  display: flex;
+}
+
+/* article order list */
+.article__order-list {
+  list-style-type: decimal;
+  line-height: 150%;
+}
+
+.article__order-list-item {
+  margin: 0.5em 1em 0.5em 1.5em;
+}
+
 /* boxの高さ、幅に border-width と padding を含める */
 * {
   box-sizing: border-box;
