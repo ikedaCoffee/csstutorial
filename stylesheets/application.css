@@ -544,6 +544,85 @@ article {
   border-top: none;
 }
 
+/* footer */
+footer {
+  background-color: #444;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  line-height: 150%;
+  height: 8.0em;
+  width: 48%;
+  font-size: 14px;
+  margin-left: 2%;
+  margin-top: 20px;
+}
+
+.footer-nav__link {
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.footer-nav__link::before {
+  content: "> ";
+}
+
+.about-author {
+  background-color: #ccc;
+  width: 48%;
+  margin: 20px 2% 10px 0;
+  border-radius: 0.25em;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px 0 16px 16px;
+}
+
+.about-author__title {
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.about-author__image {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.about-author__descriptions {
+  width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-author__term {
+  font-size: 14px;
+  width: 80px;
+  text-align: right;
+  padding-right: 10px;
+  padding-bottom: 1.0em;
+}
+
+.about-author__description {
+  font-size: 14px;
+  width: 270px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fafafa;
+  width: 100%;
+  padding: 20px;
+  font-size: 14px;
+}
+
 /* boxの高さ、幅に border-width と padding を含める */
 * {
   box-sizing: border-box;
